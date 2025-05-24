@@ -88,6 +88,28 @@ valid_set = torch.FloatTensor(valid_set)
 set_number : int = len(test_set) # licze ile mam danych do nauki
 
 
+### Definicja modelu
+
+input_size = N 
+
+output_size = 2
+
+layers = [
+
+
+    nn.Linear(input_size,256),
+    nn.ReLU(),
+    nn.Linear(256,256),
+    nn.ReLU(),
+    nn.Linear(256,output_size)
+]
+
+model = nn.Sequential(*layers)
+model.cuda()
+
+
+loss_function = nn.CrossEntropyLoss()
+optimizer = Adam(model.parameters())
 
 
 

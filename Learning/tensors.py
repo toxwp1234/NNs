@@ -14,6 +14,5 @@ b.backward() ### wywołuje liczenie do tyłu. Funkcja liczy każdy gradient aż 
 
 
 
-
 plt.plot(a.detach(),a.grad.detach())
 plt.show()
