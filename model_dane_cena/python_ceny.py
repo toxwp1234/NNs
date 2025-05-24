@@ -83,5 +83,15 @@ valid_set = cut_to_N(N,valid_set)
 test_set = torch.FloatTensor(test_set)
 valid_set = torch.FloatTensor(valid_set)
 
-print(test_set)
+
+
+set_number : int = len(test_set) # licze ile mam danych do nauki
+
+
+
+
+
+
+
+print(test_set[1])
 
